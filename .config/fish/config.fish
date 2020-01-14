@@ -4,7 +4,7 @@ set fish_pager_color_progress cyan
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 
 # dotfiles
-alias dotfiles="/usr/local/bin/git --git-dir=/Users/gentcys/Codes/personal/bare/ --work-tree=/Users/gentcys"
+alias dotfiles="/usr/local/bin/git --git-dir=$HOME/Codes/personal/dotfiles/ --work-tree=$HOME"
 
 # rbenv
 status --is-interactive; and source (rbenv init -|psub)
