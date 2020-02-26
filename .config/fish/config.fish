@@ -6,6 +6,9 @@ test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shel
 # dotfiles
 alias dotfiles="/usr/local/bin/git --git-dir=$HOME/Codes/personal/dotfiles/ --work-tree=$HOME"
 
+# Homebrew's sbin
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+
 # rbenv
 status --is-interactive; and source (rbenv init -|psub)
 
