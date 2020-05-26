@@ -131,7 +131,7 @@
 [commit]
 
 	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = false
+	gpgSign = true
 	template = ~/.gitmessage
 
 [diff]
@@ -190,6 +190,7 @@
 [user]
 	name = gentcys
 	email = iamchencong@gmail.com
+	signingKey = AC9A26CA9BF30C84
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
